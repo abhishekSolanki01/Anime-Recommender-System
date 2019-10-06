@@ -39,6 +39,7 @@ def available_animes():
 
 	return render_template('animes.html', tables=[output_html], a_count = count)
 
+# URL Route to the Application for "Not Found" error page
 @app.route('/404')
 def not_found():
 	return render_template('404.html')
